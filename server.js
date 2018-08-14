@@ -22,6 +22,8 @@ app.all('*', function(req, res, next) {
 
 app.get('/example', routes.getAll);
 app.get('/terminal', routes.getTerminal);
+app.get('/string/:id', routes.showString);
+app.post('/example', routes.getAllPost);
 
 app.set('port', process.env.PORT || 5000);
 
